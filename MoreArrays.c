@@ -5,6 +5,13 @@
 int main(int argc, char *argv[]) {
     int numbers[4] = {1};
     char name[4] = {'a'};
+    int k;
+    argv[3] = "sss";
+    for (k = 0; k < argc; ++k) {
+        printf("Arg %d: %s\n", k, argv[k]);
+    }
+
+
 
     // first, print them out raw
     printf("numbers: %d %d %d %d\n",
@@ -42,9 +49,24 @@ int main(int argc, char *argv[]) {
 
     printf("another: %s\n", another);
 
-    printf("another each: %d %d %c %c %c\n",
+    printf("another each: %d %d %d %d %d %d\n",
            another[0], another[1],
-           another[2], another[3], another[4]);
+           another[2], another[3], another[4], another[5]);
+
+    // lets do an array of strings
+    char *strings[] = {
+            "sai", "pc","is", "awesome"
+    };
+    int j;
+    printf("size is : %d\n", sizeof(strings));
+    for (j = 0; j < 4; ++j) {
+        printf("%d element is  %s\n", j, strings[j]);
+    }
+
+    for (j = 0; j < 4; ++j) {
+        printf("%s ", strings[j]);
+    }
+    printf("\n");
 
     return 0;
 }
