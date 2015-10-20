@@ -30,4 +30,5 @@ int main(int argc, char *argv[]) {
            sizeof(full_name) / sizeof(char));
 
     return 0;
+
 }
