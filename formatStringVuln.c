@@ -5,10 +5,10 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
-    char* num;
+    char num[20];
+    scanf("%s", num);
     int sai = 100;
-    scanf("%s", &num);
     printf(num);
-
+    printf("\n");
     return 0;
 }
